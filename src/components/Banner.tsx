@@ -2,7 +2,7 @@ import logo from "../assets/pranta_img.jpeg";
 
 function Banner() {
   return (
-    <nav className="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-slate-950/80 backdrop-blur-lg">
+    <nav className="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-yellow-400 backdrop-blur-lg">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 sm:px-8">
 
         {/* Logo */}
@@ -10,7 +10,7 @@ function Banner() {
           <img
             src={logo}
             alt="Pranta Bhaiya"
-            className="h-11 w-11 rounded-full object-cover ring-2 ring-cyan-400/50"
+            className="h-11 w-11 rounded-full object-cover hover:ring-4 ring-cyan-500/50"
           />
 
           <div>
@@ -18,7 +18,7 @@ function Banner() {
               Pranta Bhaiya
             </h1>
 
-            <p className="hidden text-xs text-slate-400 sm:block">
+            <p className="hidden text-xs text-white sm:block">
               Welcome to my website
             </p>
           </div>
@@ -28,14 +28,14 @@ function Banner() {
         <div className="hidden items-center gap-8 md:flex">
           <a
             href="#home"
-            className="text-sm font-medium text-slate-300 transition hover:text-cyan-400"
+            className="text-sm font-medium text-white transition hover:text-black"
           >
             Home
           </a>
 
           <a
             href="#about"
-            className="text-sm font-medium text-slate-300 transition hover:text-cyan-400"
+            className="text-sm font-medium text-white transition hover:text-black"
           >
             About
           </a>
