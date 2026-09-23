@@ -20,7 +20,7 @@ interface Product {
 const products: Product[] = [
   {
     id: 1,
-    name: "Premium Classic T-Shirt",
+    name: "a",
     price: 799,
     oldPrice: 1199,
     rating: 4.8,
@@ -30,7 +30,7 @@ const products: Product[] = [
   },
   {
     id: 2,
-    name: "Premium Casual Shirt",
+    name: "b",
     price: 999,
     oldPrice: 1499,
     rating: 4.7,
@@ -40,7 +40,7 @@ const products: Product[] = [
   },
   {
     id: 3,
-    name: "Classic Black Hoodie",
+    name: "k",
     price: 1299,
     oldPrice: 1799,
     rating: 4.9,
@@ -50,7 +50,7 @@ const products: Product[] = [
   },
   {
     id: 4,
-    name: "Comfort Fit Sweatshirt",
+    name: "c",
     price: 1099,
     oldPrice: 1599,
     rating: 4.6,
@@ -59,7 +59,7 @@ const products: Product[] = [
   },
   {
     id: 5,
-    name: "Premium Cotton Jacket",
+    name: "d",
     price: 1799,
     oldPrice: 2499,
     rating: 4.8,
@@ -69,7 +69,7 @@ const products: Product[] = [
   },
   {
     id: 6,
-    name: "Premium Cotton Jacket",
+    name: "e",
     price: 179,
     oldPrice: 2499,
     rating: 4.8,
@@ -79,7 +79,7 @@ const products: Product[] = [
   },
   {
     id: 7,
-    name: "Premium Cotton Jacket",
+    name: "f",
     price: 179,
     oldPrice: 2499,
     rating: 4.8,
@@ -177,7 +177,7 @@ function Carousel() {
         </div>
 
         {/* Products */}
-        <div className="overflow-hidden">
+        <div className="lg:overflow-hidden lg:w-full overflow-hidden w-210">
           <div
             className="flex gap-5 transition-transform duration-500 ease-in-out"
             style={{
@@ -189,7 +189,7 @@ function Carousel() {
             {products.map((product) => (
               <div
                 key={product.id}
-                className="group min-w-[calc(25%-15px)] overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+                className="group min-w-[calc(25%-10px)] overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
               >
                 {/* Product Image */}
                 <div className="relative aspect-square overflow-hidden bg-gray-100">
